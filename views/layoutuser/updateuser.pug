@@ -1,0 +1,40 @@
+extends ../../views/layout/layoutUser.pug
+block content
+    html  
+        head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            meta(http-equiv='X-UA-Compatible' content='ie=edge')
+            title CDIO 3
+        body
+            .container
+                    label#editUserHere(for="loginHere") Cập Nhật Thông Tin Người Dùng 
+                    div#divFormEditUser
+                        .card.mb-3#cardEditUser
+                            a(href='/')
+                                img(style="width:250px;height:250px" src="/" + users.avatar).card-img-top 
+                            .card-body#card-body-EditUser(style="width:250px")
+                                a(href="/")
+                                h5#userName.card-title= users.userName
+                        if errors
+                            each error in errors
+                                .alert.alertError= error
+                        form#formEditUser(action="/user/update-user/" + users.id method = "POST" enctype="multipart/form-data")
+                            .form-group
+                                input#inputEditUserName(type="text" name="userName" value= users.userName placeholder="  Tên Đăng Nhập ...")
+                            .form-group
+                                input#inputEditUserPassw(type="password" name="password" value= users.password placeholder="  Mật Khẩu ...")
+                            //- .form-group
+                            //-     input#inputEditUserRank(type="number" name="rank" value= user.rank  placeholder="quyền...")
+                            .form-group
+                                input#inputEditUserAddress(type="text" name="address" value= users.address placeholder="Địa Chỉ...")
+                            .form-group
+                                input#inputEditUserPhoneNumber(type="number" name="numberPhone" value= users.numberPhone placeholder="Số Điện Thoại...")
+                            .form-group
+                                input#inputEditUserEmail(type="text" name="Email" value= users.Email placeholder="Email...")
+                            .form-group
+                                input#avatarEditUser.form-control-file(name = "avatar" value= users.avatar type="file")
+                            .form-group
+                                input#inputEditUserIdCard(type="number" name="idCard" value= users.idCard placeholder="Chứng Minh Nhân Dân")
+                            .form-group#btnFormEditUser
+                                button.btn.btn-success.my-2.my-sm-0(type="submit") Cập Nhật

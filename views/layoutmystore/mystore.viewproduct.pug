@@ -1,0 +1,43 @@
+extends ../../views/layout/layout.pug 
+block content
+    html
+        head
+            title product name
+        body
+            .container#containerViewProduct
+                .card.mb-3#card-product-mystoreView
+                    a
+                        img(style="width:350px;height:350px" src="/" + products.imageProduct).card-img-top 
+                    //- .card-body#card-body(style="width:188px")
+                    //-     a
+                    //-         h5#nameProduct.card-title= products.nameProduct
+                    //-     h5#priceProduct.card-title= products.priceProduct +"₫"
+                table.table#tableViewProduct
+                    tr#trTableViewProduct
+                        tr
+                            td
+                                h6#nameProduct.card-title= products.nameProduct
+                        tr
+                            td
+                                h6#priceProduct.card-title= products.priceProduct
+                        tr
+                            td
+                                h6#saleProduct.card-title  khuyến mãi
+                        tr
+                            td
+                                h6#chooseSize.card-title Chọn size
+                                button 35
+                        tr
+                            td
+                                h6#amountProduct.card-title số Lượng
+                                input(type="number")                                
+                        tr
+                            td
+                                a#btnAddToCart.btn.btn-outline-primary(href="/add-to-cart/" + products.id) Thêm Vào Giỏ Hàng
+                                a#btnBuy.btn.btn-outline-primary(href="/") Mua Ngay
+            .container#ShopCard
+                h5 Shop Của....
+            .container#describeProduct
+                h5 Mô Tả :
+                    h6= products.describeProduct
+                    

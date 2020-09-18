@@ -1,0 +1,32 @@
+extends ../../views/layout/layoutUser.pug
+block content
+    html  
+        head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            meta(http-equiv='X-UA-Compatible' content='ie=edge')
+            title CDIO 3
+        body
+            //- s
+        .container
+            table.table
+                tr
+                    th Ảnh Đại Diện
+                    th Tên Người Dùng
+                    th Quyền
+                    th Phone
+                    th Email
+                    th Action
+                each user in users 
+                    tr
+                        td
+                            img(style ="with: 32px; height:32px")(src= "/" + user.avatar)
+                        td= user.userName
+                        td= user.rank
+                        td= user.numberPhone
+                        td= user.Email
+                        td
+                            a#btnEditUser.btn.btn-primary(class="fas fa-edit" href="/user/update-user/" + user.id)
+                        td
+                            a#btnDelUser.btn.btn-danger(class="fas fa-trash-alt" href="/user/delete-user/" + user.id)
+

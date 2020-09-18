@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.navbar{
+    left: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 0;
+}
+#navbarTop {
+    background-color: #CD853F;
+    height: 30px;
+}
+
+#mystore {
+    margin-left: 800px;
+    color:white;
+}
+
+#notification, #logIn, #registration, #help {
+    color:white;
+}
+
+#navbarBelow{
+    background-color: #CD853F;
+    height: 100px;
+}
+
+#navbarLogo{
+    margin-left: 100px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+#navbarSearch{}
+
+#inputFormSearch{
+    width: 600px;
+}
+
+#navbarCart {
+    margin-right: 200px;
+}
+
+#cart {
+    font-size: 30px;
+    color: white;
+}
+
+#body-page{
+    margin-top: 20px;
+}
+
+.mySlides .imgSlide{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    width: 96%;
+}
+
+#card-product{
+    width: 190px;
+    height: 285px;
+}
+
+#cartTitlePriceProduct,
+#amountProduct,
+#cartTitleNameProduct{
+    /* text-align: center; */
+}
+
+#show-product{
+    
+}
+
+#card-body{
+   padding-top: 0px;
+   padding-left: 2px;
+   height:285px;
+}
+
+#nameProdut, #priceProduct{
+    margin-bottom: 0;
+}
+#amountProduct{
+    font-size: 10px;
+}
+#priceProduct {
+    color: red;
+}
+
+#btnEdit {
+    margin-left: 80px;
+}
+#btnDel {
+    margin-left: 2px;
+}
+
+/* mystore */
+
+#sidebar{
+    background-color: #ECECE3;
+    width: 200px;
+    height: auto;
+}
+
+#sidebar-content {
+    padding-top: 20px;
+    margin-right: 2px;
+    width: 200px;
+}
+
+#body-page-mystore{
+    display: flex;
+}
+
+#show-product-mystore{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#rowShowProductMyStore{
+   margin-right: 0;
+   margin-left: 20px;
+}
+
+#card-product-mystore{
+    width: 190px;
+    height: 285px;
+}
+
+#nameProduct,#amountProduct,#priceProduct{
+    margin-bottom: 0;
+
+}
+/* mystore add product */
+
+#form-add-product-mystore{
+    padding-top: 50px;
+    padding-left: 200px;
+    margin-bottom: 60px;
+}
+
+#name-product,#price-product,#describe-product{
+    width: 500px;
+}
+
+
+/* mystore edit product */
+#card-product-mystoreEdit {
+    width: 190px;
+    height: 285px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+/* mystore view product */
+#containerViewProduct{
+    display: flex;
+}
+
+#card-product-mystoreView{
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+}
+
+#tableViewProduct{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#trTableViewProduct{
+    height: 20px;
+}
+
+#btnBuy{
+    margin-left: 40px;
+}
+
+/*login page*/
+#bodyLogin{
+   background:  linear-gradient(to right, #3a4354, #999999);
+    overflow-y: hidden;
+}
+#loginHere{
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: floralwhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.alertError{
+    color: red;
+    text-align: center;
+}
+
+#divFormLogin{
+    background:  linear-gradient(to right, #3a4354, #999999);
+    margin-left: 200px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px 5px rgb(35, 80, 105);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 700px;
+    height: 500px;
+}
+
+#formLogin{
+    width:500px;
+    height: 500px;
+}
+
+#inputUserNameLogin,
+#inputPasswLogin{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#inputUserNameLogin{
+    margin-left: 150px;
+}
+
+#inputPasswLogin{
+    margin-left: 150px;
+}
+
+#inputCheckBoxLogin{
+    margin-left: 150px;
+}
+
+#btnLogin{
+    margin-left: 130px;
+}
+
+#registrationLogin a, #forgotPassword a{
+    margin-left: 260px;
+    color: white;
+    font-size: 13px;
+}
+
+/* page register */
+
+#bodyRegister{
+    background:  linear-gradient(to right, #3a4354, #999999);
+}
+#registerHere{
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: floralwhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.alertError{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+}
+
+#divFormRegister{
+    background:  linear-gradient(to right, #3a4354, #999999);
+    margin-left: 200px;
+    margin-top: 50px;
+    box-shadow: 5px 10px 8px 10px rgb(35, 80, 105);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 700px;
+    height: auto;
+}
+
+#formRegister{
+    width:500px;
+    height: 500px;
+}
+
+#inputUserNameRegister,
+#inputPasswRegister,
+#inputRank,
+#inputAddress,
+#inputPhoneNumber,
+#inputEmail,
+#inputIdCard{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#inputUserNameRegister{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+#inputPasswRegister,
+#inputRank,
+#inputAddress,
+#inputPhoneNumber,
+#inputEmail,
+#inputIdCard,
+#avatar{
+    margin-left: 150px;
+}
+
+#btnRegister{
+    margin-left: 180px;
+    width: auto;
+}
+
+/* edit user */
+#inputEditUserName,
+#inputEditUserPassw,
+#inputEditUserRank,
+#inputEditUserAddress,
+#inputEditUserPhoneNumber,
+#inputEditUserEmail,
+#avatarEditUser,
+#inputEditUserIdCard{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+} 
+#formEditUser,
+#editUserHere{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#editUserHere{
+    margin-left: 250px;
+    margin-top: 40px;
+    margin-bottom: 10;
+    font-size: 30px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btnformEditUser,
+#cardEditUser{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+#cardEditUser{
+    width: 188px;
+    height: 250px;
+}
+
+#divFormEditUser{
+    display: flex;
+}
+
+/* page cart */
+#btnBuyProduct{
+    margin-left: 83%;
+}
